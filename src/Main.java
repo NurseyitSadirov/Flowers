@@ -24,15 +24,18 @@ public class Main {
 
         List<Rose> roses = List.of(
                 new Rose("KYRGYZSTAN","29-03-2023","Blue",1200),
-                new Rose("UZBEKISTAN","29-02-2023","Blue",1200),
-                new Rose("USA","29-01-2023","Blue",1200),
-                new Rose("RUSSIAN","29-12-2022","Blue",1200),
-                new Rose("ITALY","29-11-2022","Blue",1200)
+                new Rose("UZBEKISTAN","29-02-2023","Blue",12000),
+                new Rose("USA","29-01-2023","Blue",12000),
+                new Rose("RUSSIAN","29-12-2022","Blue",4200),
+                new Rose("ITALY","29-11-2022","Blue",1600)
         );
-        String color = new Scanner(System.in).nextLine();
+//        String color = new Scanner(System.in).nextLine();
         RoseService roseService = new RoseService();
-//        System.out.println(roseService.addFlowers(roses));
+        System.out.println(roseService.addFlowers(roses));
 //        System.out.println(roseService.getAllFlowers());
-        System.out.println(roseService.getFlowersFinByColor(color));
+//        System.out.println(roseService.getFlowersFinByColor(color));
+//        System.out.println(roseService.groupingFlowersByColor());
+        System.out.println(roseService.getSumAllFlowers());
+        System.out.println(roseService.getAllFlowersSortByPrice("desc"));
     }
 }

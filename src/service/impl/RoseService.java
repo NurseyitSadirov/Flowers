@@ -35,6 +35,9 @@ public class RoseService implements FlowersService {
 
     @Override
     public Map<String, List> groupingFlowersByColor() {
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("Group flowers by color ");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~");
         Map<String, List<Flowers>> flowersByColor = roses.stream()
                 .collect(Collectors.groupingBy(Flowers::getColor));
         System.out.println(flowersByColor);

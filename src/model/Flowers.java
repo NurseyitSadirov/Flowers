@@ -47,11 +47,11 @@ public class Flowers {
 
     @Override
     public String toString() {
-        return "Flowers{" +
-                "manufacturerCountry='" + manufacturerCountry + '\'' +
-                ", shelfLifeInDays='" + shelfLifeInDays + '\'' +
-                ", color='" + color + '\'' +
-                ", price=" + price +
+        return "\nFlowers { " +
+                "\nmanufacturerCountry: " + manufacturerCountry + '\'' +
+                "\nshelfLifeInDays: " + shelfLifeInDays + '\'' +
+                "\ncolor: " + color + '\'' +
+                "\nprice: " + price +
                 '}';
     }
 }
