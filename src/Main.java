@@ -2,6 +2,7 @@ import model.Rose;
 import service.impl.RoseService;
 
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,7 +29,10 @@ public class Main {
                 new Rose("RUSSIAN","29-12-2022","Blue",1200),
                 new Rose("ITALY","29-11-2022","Blue",1200)
         );
+        String color = new Scanner(System.in).nextLine();
         RoseService roseService = new RoseService();
-        System.out.println(roseService.addFlowers(roses));
+//        System.out.println(roseService.addFlowers(roses));
+//        System.out.println(roseService.getAllFlowers());
+        System.out.println(roseService.getFlowersFinByColor(color));
     }
 }

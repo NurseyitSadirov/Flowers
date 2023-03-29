@@ -28,6 +28,7 @@ public class RoseService implements FlowersService {
 
     @Override
     public List getFlowersFinByColor(String color) {
+        System.out.println("Write color ");
         roses.stream().filter(x -> x.getColor().equalsIgnoreCase(color)).toList().forEach(System.out::println);
         return roses;
     }
